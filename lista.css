@@ -1,0 +1,157 @@
+:root{
+--white:#fafafb;
+--purple:#e9967a;
+--blue-light:#04d4c3;
+--blue-dark:#2a73c2;
+--green:#2c7b90;
+
+}
+
+
+
+body{
+   
+ /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+    
+}
+h1{
+    color: black;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(182, 20, 109), 0 0 0.2em rgb(37, 162, 110);
+    padding:0;
+    
+}
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    margin-bottom: 40px;
+}
+
+etiquetanombre
+ {
+  display: flex; 
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 10px; /* Espacio entre las etiquetas */
+}
+etiquetames
+ {
+  display: flex;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 10px; /* Espacio entre las etiquetas */
+}
+.etiqueta:last-child {
+    margin-right: 0; /* Para quitar el margen en la última etiqueta */
+}
+
+
+.etiquetanombre label {
+  margin-right: 10px;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(174, 95, 138), 0 0 0.2em rgb(37, 162, 110);
+  font-size: 25px;
+  border-radius: 10px 100px / 120px;
+  flex-direction: column;
+}
+.etiquetames label {
+    margin-right: 10px;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(174, 95, 138), 0 0 0.2em rgb(37, 162, 110);
+    font-size: 25px;
+    border-radius: 10px 100px / 120px;
+    flex-direction: column;
+  }
+
+.etiquetanombre input[type="text"],
+.etiquetames input[type="text"] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  flex-direction: column;
+  width: 150px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+/* hasta aqui es la parte superior de arriba */
+
+
+/* hasta aqui  */
+
+/*AhoRA VOY A DISEnar lo que es el agregagado */
+
+
+.fecha{
+    width: 50px; /* Tamaño del cuadro para la fecha */
+
+       
+}
+.tarea {
+    width: 10px; /* Tamaño del cuadro para la fecha */
+    border-radius: 30px;
+ 
+       
+}
+input[type="text"], input[type="checkbox"], button {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    
+}
+.numerod{
+    width: 20px;
+
+       
+}
+.taread{
+    width: 300px;
+
+}
+.fechad{
+    width: 3cm;
+  
+       
+}
+
+button,.input {
+    
+    background-image: linear-gradient(to right, #E6B8B7, #FFDAB9);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-right: 5px;
+}
+button:hover {    
+    
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+/*lo que es la lista*/
+.lista-tareas{
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+    grid-template-columns: 1fr 2fr 5fr 1fr;
+    align-items: center;
+    gap: 5px;
+    border-collapse: collapse; /* Combina los bordes de las celdas para un aspecto más limpio */
+    font-size: 20px;
+}
+
+
+

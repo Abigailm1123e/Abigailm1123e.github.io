@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer lista de tareas</title>
+  
+</head>
+<body>
+    
+    <link rel="stylesheet" href="lista.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lumanosimo&family=Open+Sans:wght@300;400;700&family=Rubik:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">    <!-- 
+        ahora voy hacer mi propio 
+        Formulario para agregar nuevas tareas -->
+        
+            <h1>Tareas diarias</h1>
+          
+   
+        <div class="contenedor">
+            <div class="etiquetanombre">
+                <label for="nombre" >Nombre:</label>
+                <input type="text"  placeholder="Agrega tu nombre">
+            </div>
+            <div class="etiquetames">
+                <label for="email" >Mes:</label>
+                <input type="text"placeholder="Agrega el mes">
+            </div>
+        </div>
+    
+            <div class="formulario">
+               
+                <input type="text" id="numero" placeholder="#" class="numerod" min="0" step="1" oninput="validarNumero(event)" readonly >
+                <input type="date" id="fecha" placeholder="Fecha" class="fechad"   >
+                <input type="text" id="tarea" placeholder="Tarea" class="taread">    
+                <button  onclick="guardarCambios()">Guardar Cambios</button>
+                <button onclick="agregarTarea()">Agregar</button>       
+             
+            </div>
+       
+
+
+            <table class="lista-tareas" id="ListaTareas">
+               
+                <!-- Las tareas se agregarán dinámicamente aquí con JavaScript -->
+            </table>
+        </div>
+     <script src="lista.js"></script> 
+</body>
+</html>
